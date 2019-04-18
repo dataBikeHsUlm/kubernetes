@@ -56,13 +56,13 @@ interpolation:
   retries: 1 # number of time the API will retry requests to interpolation service
   timeout: 5000 # time in ms the API will wait for interpolation service responses
   annotations: {}
-  pvc:
-    create: true
-    name: interpolation-pvc
-    storageClass: local-storage
-    accessModes: ReadWriteMany
-    storage: 10Gi
-    annotations: {}
+  pvc: {}
+ #   create: true
+ #   name: interpolation-pvc
+ #   storageClass: local-storage
+ #   accessModes: ReadWriteMany
+ #   storage: 10Gi
+ #   annotations: {}
 
 pip:
   enabled: true
@@ -73,13 +73,13 @@ pip:
   retries: 1 # number of time the API will retry requests to the pip service
   timeout: 5000 # time in ms the API will wait for pip service responses
   annotations: {}
-  pvc:
-    create: true
-    name: pip-pvc
-    storageClass: local-storage
-    accessModes: ReadWriteMany
-    storage: 10Gi
-    annotations: {}
+  pvc: {}
+#    create: true
+#    name: pip-pvc
+#    storageClass: local-storage
+#    accessModes: ReadWriteMany
+#    storage: 10Gi
+#    annotations: {}
 
 dashboard:
   enabled: true
